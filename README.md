@@ -16,7 +16,7 @@ Para la resolución de los problemas se han utilizado los siguientes paradigmas:
 * **CUDA (Aceleración en GPU):** Ejecución masiva utilizando el kernel de la tarjeta gráfica. Se gestiona de forma manual la jerarquía de memoria (transferencias host-to-device y device-to-host) y el diseño del grid/bloques de hilos. Se implementa el uso de memoria compartida (shared memory) y la sincronización a nivel de bloque (__syncthreads) para optimizar el rendimiento.
 
 ## Análisis de Rendimiento
-El repositorio incluye un estudio técnico exhaustivo (ubicado en la carpeta /docs) donde se evalúan las siguientes métricas para distintos tamaños de problema (N) y configuraciones de hilos/bloques:
+El repositorio incluye un estudio técnico exhaustivo (Trabajo SPD - OpenMP y Cuda.pdf) donde se evalúan las siguientes métricas para distintos tamaños de problema (N) y configuraciones de hilos/bloques:
 
 * **Tiempos de ejecución:** Medición estructurada para evaluar la viabilidad de cada modelo frente a cargas de trabajo escalables.
 * **Factor de Aceleración (Speedup):** Cuantificación matemática de la mejora de velocidad respecto a la ejecución secuencial.
